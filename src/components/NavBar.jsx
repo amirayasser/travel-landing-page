@@ -13,7 +13,7 @@ export default function NavBar({ addstyle, brandColor }) {
           Wanderlust
         </Navbar.Brand>
         <Nav className="mr-auto  nav__links">
-          <NavLink exact className="link" to="/">
+          <NavLink exact className="link" to="/travel-landing-page/">
             Home
           </NavLink>
           <Link
@@ -34,11 +34,7 @@ export default function NavBar({ addstyle, brandColor }) {
           >
             Destinations
           </Link>
-          <Link
-            className="link"
-            to="guide"
-            style={{ cursor: "pointer" }}
-          >
+          <Link className="link" to="guide" style={{ cursor: "pointer" }}>
             Guide
           </Link>
         </Nav>

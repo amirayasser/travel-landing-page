@@ -23,27 +23,26 @@ import Client from "./components/Client";
 function App() {
 
   return (
-      <Router>
+    <Router>
+      <Switch>
+        <Route exact path="/travel-landing-page/">
+          <Home />
+        </Route>
 
-        <Switch>
-          <Route exact path="/">
-            <Home />
-          </Route>
-          <Route exact path="/trending">
-            <Trending />
-          </Route>
-          <Route exact path="/destinations">
-            <Destinations />
-          </Route>
-          <Route exact path="/Guide">
-            <Guide />
-          </Route>
-          <Route exact path="/Client">
-            <Client />
-          </Route>
-        </Switch>
-
-      </Router>
+        {/* <Route exact path="/trending">
+          <Trending />
+        </Route>
+        <Route exact path="/destinations">
+          <Destinations />
+        </Route>
+        <Route exact path="/Guide">
+          <Guide />
+        </Route>
+        <Route exact path="/Client">
+          <Client />
+        </Route> */}
+      </Switch>
+    </Router>
   );
 }
 
